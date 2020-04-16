@@ -9,6 +9,44 @@
   </head>
   <body>
     <!-- add your code below -->
-    <p>exercise #2 - creating a form</p>
+    <form class="contact">
+      <h1>
+        Contact Form
+      </h1>
+      <div>
+        <label for="name">
+          Name
+          <span class="required">(required)</span>
+        </label>
+        <br />
+        <input required="required" name="name" type="text" />
+      </div>
+      <br />
+      <div>
+        <label for="email">
+          Email Address
+          <span class="required">(required)</span>
+        </label>
+        <br />
+        <input required="required" name="email" type="email" />
+      </div>
+      <br />
+      <div>
+        <label for="comments">
+          Comments?
+        </label>
+        <br />
+        <textarea name="comments" rows="4"></textarea>
+      </div>
+      <br />
+      <div>
+        <input name="newsletter" type="checkbox" checked />
+        <label for="newsletter">Sign up for the newsletter</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
   </body>
 </html>

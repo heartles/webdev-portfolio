@@ -1,0 +1,50 @@
+body {
+  background-color: #bbb;
+}
+
+.navbar {
+  background-color: #222;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #bbb;
+  font-family: monospace;
+  font-size: 150%;
+  max-height: 75px;
+}
+
+.navbar .name {
+  float: left;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  float: right;
+  margin: 0;
+}
+
+.navbar li {
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+
+.navbar button {
+  border: none;
+  padding: 20px;
+  height: 100%;
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+}
+
+.navbar button:hover {
+  background-color: #333;
+}
+
+.navbar a {
+  color: #bbb;
+}

@@ -58,15 +58,11 @@ body {
   font-size: 21px;
 }
 
-.mobile-only {
+.hamburger {
   display: none;
 }
 
 @media screen and (max-width: 700px) {
-  .mobile-only {
-    display: initial;
-  }
-
   .navbar .name {
     float: none;
   }
@@ -85,10 +81,11 @@ body {
     max-height: unset;
   }
 
-  .navbar .hamburger {
+  .hamburger {
     position: absolute;
     top: 0;
     right: 0;
+    display: block;
   }
 
   .hamburger i {

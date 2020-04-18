@@ -126,6 +126,7 @@ header a {
   background-color: #bbb;
   margin: 0px;
   overflow: auto;
+  width: 100%;
 }
 
 #content > div {

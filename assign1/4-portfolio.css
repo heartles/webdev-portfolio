@@ -1,6 +1,6 @@
 body {
   background-color: #222;
-  font-family: sans-serif;
+  font-family: monospace;
   margin: 0px;
 }
 
@@ -138,16 +138,20 @@ header a {
   padding: 1px 20px;
 }
 
-#content img {
+#bio p {
+  margin-left: 10%;
+}
+
+img {
   margin: 20px;
 }
 
-#content img.left {
+img.left {
   float: left;
   margin-left: 0px;
 }
 
-#content img.right {
+img.right {
   float: right;
   margin-right: 0px;
 }

@@ -10,12 +10,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
-
     <script type="application/javascript" src="4-portfolio.js"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav>
         <div class="name">
           >heartles_
         </div>
@@ -26,13 +25,13 @@
         </div>
         <ul id="menu-items">
           <li>
-            <a href="#"><button>About</button></a>
+            <a href="#"><button><span>About</span></button></a>
           </li>
           <li>
-            <a href="#"><button>Projects</button></a>
+            <a href="#"><button><span>Projects</span></button></a>
           </li>
           <li>
-            <a href="mailto:me@heartles.io"><button>Contact</button></a>
+            <a href="mailto:me@heartles.io"><button><span>Contact</span></button></a>
           </li>
           <li class="icon-wrapper">
             <a rel="me" href="https://monads.online/@heartles">
@@ -45,41 +44,45 @@
         </ul>
       </nav>
     </header>
-    <div class="content">
-      <section>
-        <h1>Content!</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in gravida
-          orci. Morbi tincidunt velit non nisi dapibus, ac ullamcorper nibh
-          sagittis. Ut semper venenatis iaculis. Donec purus quam, blandit
-          euismod sagittis eu, sagittis non ante. Aenean elementum tellus non
-          dui ultrices ornare aliquam in sem. Duis id ornare quam, vitae
-          <img class="right" src="http://placekitten.com/200" />
-          lobortis sapien. Suspendisse aliquet risus risus, sit amet laoreet
-          urna tincidunt rhoncus. Suspendisse at tortor sit amet arcu ornare
-          sagittis id quis orci. Fusce vestibulum purus sed elit aliquet
-          tristique. Donec venenatis justo vitae semper suscipit. Suspendisse et
-          cursus ex. In et velit felis. Nam ut erat lacus.
-        </p>
-        <h3>Wow!</h2>
-        <p>
-          Mauris risus lacus, mollis vitae tempus quis, iaculis in sem.
-          Vestibulum quis ante sodales, iaculis tortor tempor, egestas metus.
-          Nunc id lorem augue. Class aptent taciti sociosqu ad litora torquent
-          per conubia nostra, per inceptos himenaeos. Pellentesque nunc risus,
-          commodo sit amet consequat at, luctus sit amet arcu. Phasellus in
-          tortor cursus, fermentum dolor nec, fringilla erat. Praesent lacinia
-          nisi vel lacus pellentesque consectetur sit amet at augue.
-          <img class="left" src="http://placekitten.com/200" />
-          Pellentesque vitae eros metus. Donec at porta justo, vel feugiat
-          tortor. Vestibulum nec dolor elit. Etiam quis ullamcorper augue. Morbi
-          elementum, est eu mollis accumsan, velit elit luctus ante, a pulvinar
-          turpis nulla dignissim enim. Integer ac justo vitae lectus bibendum
-          vehicula. Maecenas eleifend sit amet est a pulvinar. Vivamus quis
-          mauris tincidunt, laoreet ipsum ut, blandit urna. Nunc eget lectus
-          mauris.
-        </p>
-      </section>
+    <div id="content"> <!--sets background color-->
+      <div> <!--ensures distance from edge on wide screens-->
+        <div> <!--ensures minimum distance from edge on small screens-->
+          <section>
+            <h1>Content!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in gravida
+              orci. Morbi tincidunt velit non nisi dapibus, ac ullamcorper nibh
+              sagittis. Ut semper venenatis iaculis. Donec purus quam, blandit
+              euismod sagittis eu, sagittis non ante. Aenean elementum tellus non
+              dui ultrices ornare aliquam in sem. Duis id ornare quam, vitae
+              <img class="right" src="http://placekitten.com/200" />
+              lobortis sapien. Suspendisse aliquet risus risus, sit amet laoreet
+              urna tincidunt rhoncus. Suspendisse at tortor sit amet arcu ornare
+              sagittis id quis orci. Fusce vestibulum purus sed elit aliquet
+              tristique. Donec venenatis justo vitae semper suscipit. Suspendisse et
+              cursus ex. In et velit felis. Nam ut erat lacus.
+            </p>
+            <h3>Wow!</h2>
+            <p>
+              Mauris risus lacus, mollis vitae tempus quis, iaculis in sem.
+              Vestibulum quis ante sodales, iaculis tortor tempor, egestas metus.
+              Nunc id lorem augue. Class aptent taciti sociosqu ad litora torquent
+              per conubia nostra, per inceptos himenaeos. Pellentesque nunc risus,
+              commodo sit amet consequat at, luctus sit amet arcu. Phasellus in
+              tortor cursus, fermentum dolor nec, fringilla erat. Praesent lacinia
+              nisi vel lacus pellentesque consectetur sit amet at augue.
+              <img class="left" src="http://placekitten.com/200" />
+              Pellentesque vitae eros metus. Donec at porta justo, vel feugiat
+              tortor. Vestibulum nec dolor elit. Etiam quis ullamcorper augue. Morbi
+              elementum, est eu mollis accumsan, velit elit luctus ante, a pulvinar
+              turpis nulla dignissim enim. Integer ac justo vitae lectus bibendum
+              vehicula. Maecenas eleifend sit amet est a pulvinar. Vivamus quis
+              mauris tincidunt, laoreet ipsum ut, blandit urna. Nunc eget lectus
+              mauris.
+            </p>
+          </section>
+        </div>
+      </div>
     </div>
     <footer>
       some stuff goes here idk, copyright and whatnot

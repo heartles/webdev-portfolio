@@ -1,0 +1,3 @@
+## Libraries used:
+
+- Font Awesome

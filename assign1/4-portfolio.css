@@ -48,3 +48,9 @@ body {
 .navbar a {
   color: #bbb;
 }
+
+.icon-wrapper {
+  font-size: 25px;
+  padding: 12px 40px;
+  margin: 20px;
+}

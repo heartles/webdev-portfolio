@@ -50,7 +50,56 @@ body {
 }
 
 .icon-wrapper {
-  font-size: 25px;
-  padding: 12px 40px;
+  padding: 18px 40px;
   margin: 20px;
+}
+
+.icon-wrapper i {
+  font-size: 21px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-only {
+    display: initial;
+  }
+
+  .navbar .name {
+    float: none;
+  }
+
+  .navbar ul {
+    display: none;
+    float: initial;
+  }
+
+  .navbar li {
+    float: initial;
+    display: block;
+  }
+
+  .navbar {
+    max-height: unset;
+  }
+
+  .navbar .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .hamburger i {
+    font-size: 20px;
+  }
+
+  .navbar .open-menu {
+    display: block;
+  }
+
+  .navbar .icon-wrapper {
+    padding: 12px 20px 20px;
+  }
 }

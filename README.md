@@ -1,19 +1,7 @@
-## Webdev Exercises
+## Libraries used:
 
-### Assignment 1 - HTML and CSS
-- Navbar exercise
-- Form exercise
-- Card exercise
-- Portfolio exercise
+- Font Awesome
 
-### Assignment 2 - Layouts
-- to be posted week #2
+## Tutorials used:
 
-### Assignment 3 - JavaScript and DOM Manipulations
-- to be posted week #3
-
-### Assignment 4 - Node and Express
-- to be posted week #4
-
-Check D2L or Drive for more details on each assignment
-
+- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp

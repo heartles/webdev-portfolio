@@ -9,12 +9,14 @@
 
 ## Building:
 
-The build process depends on Go. If you do not have it installed, grab it from your
-package manager or the [official site](https://golang.org).
-
-To build the static site files, execute:
-
-`go run main.go`
+To build on x86_64 Linux, run `bin/build` from the root directory of the project.
 
 This will build a static copy of the site to a subdirectory called `dist/`. To host
 this, use whatever static site hosting you wish.
+
+### On other systems
+
+If you need a build for a different system, you will need to compile the build agent
+yourself. To do so, make sure [Go](https://golang.org) is installed, then run
+
+`go run build.go`

@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="site.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <script type="application/javascript" src="index.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="name">
-          >heartles_
-        </div>
-        <div class="hamburger">
-          <button onclick="toggleMenu()">
-            <i class="fas fa-bars fa-2x"></i>
-          </button>
-        </div>
-        <ul id="menu-items">
-          <li>
-            <a href="#"
-              ><button><span>About</span></button></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><button><span>Projects</span></button></a
-            >
-          </li>
-          <li>
-            <a href="mailto:me@heartles.io"
-              ><button><span>Contact</span></button></a
-            >
-          </li>
-          <li class="icon-wrapper">
-            <!--HACK:
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <script type="application/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="name">
+        >heartles_
+      </div>
+      <div class="hamburger">
+        <button onclick="toggleMenu()">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+      <ul id="menu-items">
+        <li class="nav-item">
+          <a href="#">
+            <div>About</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <div>Projects</div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="mailto:me@heartles.io">
+            <div>Contact</div>
+          </a>
+        </li>
+        <li class="icon-wrapper">
+          <!--HACK:
                 something somewhere is underlining the whitespace
                 between icons and i haven't yet figured out why
                 moving the close bracket of the i to the next line
                 seems to fix it for now-->
-            <a rel="me" href="https://monads.online/@heartles">
-              <i class="fab fa-mastodon fa-sm"></i
-            ></a>
-            <a rel="me" href="https://github.com/heartles">
-              <i class="fab fa-github fa-sm"></i
-            ></a>
-            <a rel="me" href="https://gitlab.com/heartles">
-              <i class="fab fa-gitlab fa-sm"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!--sets background color-->
-    <div id="content">
-      {{ . }}
+          <a rel="me" href="https://monads.online/@heartles">
+            <i class="fab fa-mastodon fa-sm"></i></a>
+          <a rel="me" href="https://github.com/heartles">
+            <i class="fab fa-github fa-sm"></i></a>
+          <a rel="me" href="https://gitlab.com/heartles">
+            <i class="fab fa-gitlab fa-sm"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--sets background color-->
+  <div id="content">
+    <!--ensures distance from edge on wide screens-->
+    <div>
+      <!--ensures minimum distance from edge on small screens-->
+      <div>
+        {{ . }}
+      </div>
     </div>
-    <footer>
-      some stuff goes here idk, copyright and whatnot
-    </footer>
-  </body>
+  </div>
+  <footer>
+    some stuff goes here idk, copyright and whatnot
+  </footer>
+</body>
+
 </html>

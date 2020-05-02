@@ -79,6 +79,7 @@ header a {
   header ul {
     display: none;
     float: initial;
+    box-sizing: border-box;
   }
 
   header li {

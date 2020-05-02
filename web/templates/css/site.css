@@ -195,3 +195,7 @@ footer {
   box-sizing: border-box;
   font-family: monospace;
 }
+
+footer a {
+  color: #bbb;
+}

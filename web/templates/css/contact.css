@@ -1,0 +1,14 @@
+body {
+  background-color: #222;
+  color: #bbb;
+  height: 100%;
+}
+
+.card {
+  background-color: #bbb;
+  color: #222;
+}
+
+.card-header {
+  background-color: #bbb;
+}

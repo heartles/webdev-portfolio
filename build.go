@@ -6,11 +6,18 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 const templateDir = "web/templates"
 const outputDir = "dist"
 const htmlBase = "web/base.html"
+
+// template rules:
+// 1. Parse HTML files and inject them into the base template UNLESS
+// 2. If the HTML file ends in .raw.html, then copy it without
+//    any templating
+// 3. Copy all other files without any templating (will change later if needed)
 
 func main() {
 	os.RemoveAll(outputDir)
@@ -25,7 +32,7 @@ func main() {
 
 		relPath, _ := filepath.Rel(templateDir, path)
 
-		outPath := filepath.Join(outputDir, relPath)
+		outPath := strings.Replace(filepath.Join(outputDir, relPath), ".raw.", ".", 1)
 
 		os.MkdirAll(filepath.Dir(outPath), 0755)
 
@@ -39,9 +46,14 @@ func main() {
 
 		switch filepath.Ext(info.Name()) {
 		case ".html":
-			return renderHTML(htmlBaseTemp, file, outFile)
+			if !strings.HasSuffix(info.Name(), ".raw.html") {
+				return renderHTML(htmlBaseTemp, outFile, file)
+			}
+
+			fallthrough
 		default:
-			return render(file, outFile)
+			_, err := io.Copy(outFile, file)
+			return err
 		}
 	})
 
@@ -57,12 +69,7 @@ func main() {
 	}
 }
 
-func renderHTML(base *template.Template, page *os.File, w io.Writer) error {
+func renderHTML(base *template.Template, out io.Writer, page io.Reader) error {
 	pageBytes, _ := ioutil.ReadAll(page)
-	return base.ExecuteTemplate(w, "base.html", template.HTML(pageBytes))
-}
-
-func render(page *os.File, w io.Writer) error {
-	_, err := io.Copy(w, page)
-	return err
+	return base.ExecuteTemplate(out, "base.html", template.HTML(pageBytes))
 }

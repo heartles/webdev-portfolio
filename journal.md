@@ -1,6 +1,9 @@
 # Journal
 
+Jane Mellott
+
 Deployed site: https://heartles.io
+
 Github Repo: https://github.com/heartles/webdev-portfolio
 
 ---

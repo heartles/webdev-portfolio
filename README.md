@@ -2,6 +2,7 @@
 
 - Font Awesome
 - Golang standard library (for html templating)
+- Bootstrap (in contact form page)
 
 ## Tutorials used:
 

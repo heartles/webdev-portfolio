@@ -13,6 +13,7 @@ const outputDir = "dist"
 const htmlBase = "web/base.html"
 
 func main() {
+	os.RemoveAll(outputDir)
 	os.Mkdir(outputDir, 0755)
 
 	htmlBaseTemp := template.Must(template.New("").ParseFiles(htmlBase))
@@ -25,6 +26,8 @@ func main() {
 		relPath, _ := filepath.Rel(templateDir, path)
 
 		outPath := filepath.Join(outputDir, relPath)
+
+		os.MkdirAll(filepath.Dir(outPath), 0755)
 
 		file, _ := os.Open(path)
 		defer file.Close()

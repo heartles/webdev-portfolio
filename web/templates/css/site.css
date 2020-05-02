@@ -1,0 +1,184 @@
+body {
+  background-color: #222;
+  font-family: monospace;
+  margin: 0px;
+}
+
+header {
+  background-color: #222;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #bbb;
+  font-family: monospace;
+  font-size: 18px;
+  height: 60px;
+}
+
+header .name {
+  float: left;
+  padding: 19px;
+  font-weight: bold;
+}
+
+header ul {
+  float: right;
+  margin: 0;
+}
+
+header li {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  font-size: 14px;
+}
+
+header a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.nav-item a {
+  height: 100%;
+}
+
+.nav-item:hover {
+  background-color: #444;
+}
+
+.nav-item div {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.icon-wrapper {
+  box-sizing: border-box;
+  padding: 20px 40px;
+}
+
+.icon-wrapper i {
+  font-size: 21px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .name {
+    float: none;
+  }
+
+  header ul {
+    display: none;
+    float: initial;
+  }
+
+  header li {
+    float: initial;
+    display: block;
+    height: 48px;
+  }
+
+  header {
+    max-height: unset;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+
+  .hamburger button {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: #222;
+    color: #bbb;
+    padding: 0px;
+  }
+
+  .hamburger button:hover {
+    background-color: #444;
+  }
+
+  .hamburger i {
+    font-size: 20px;
+  }
+
+  header .open-menu {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    display: block;
+    background-color: #222;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .open-menu button {
+    width: 100%;
+    padding: 16px 20px;
+  }
+
+  .open-menu button span {
+    float: left;
+  }
+
+  header .icon-wrapper {
+    padding: 12px 20px 20px;
+    height: initial;
+  }
+}
+
+#content {
+  background-color: #bbb;
+  margin: 0px;
+  overflow: auto;
+  width: 100%;
+}
+
+#content > div {
+  max-width: 700px;
+  margin: 0px auto;
+  overflow: initial;
+}
+
+#content > div > div {
+  padding: 1px 20px;
+}
+
+img {
+  margin: 20px;
+  border-radius: 50%;
+}
+
+img.left {
+  float: left;
+  margin-left: 0px;
+}
+
+img.right {
+  float: right;
+  margin-right: 0px;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  left: 0;
+  color: #bbb;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: monospace;
+}

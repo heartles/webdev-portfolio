@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="site.css" />
+  <link rel="stylesheet" href="/css/site.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <script type="application/javascript" src="index.js"></script>
+  <script type="application/javascript" src="/js/index.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
       <div class="name">
-        >heartles_
+        <a href="/">
+          >heartles_
+        </a>
       </div>
       <div class="hamburger">
-        <button onclick="toggleMenu()">
+        <button aria-label="Toggle Hamburger Menu (mobile)" onclick="toggleMenu()">
           <i class="fas fa-bars fa-2x"></i>
         </button>
       </div>
@@ -29,7 +31,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="#">
+          <a href="projects.html">
             <div>Projects</div>
           </a>
         </li>
@@ -44,18 +46,18 @@
                 between icons and i haven't yet figured out why
                 moving the close bracket of the i to the next line
                 seems to fix it for now-->
-          <a rel="me" href="https://monads.online/@heartles">
+          <a rel="me" aria-label="Mastodon Link" href="https://monads.online/@heartles">
             <i class="fab fa-mastodon fa-sm"></i></a>
-          <a rel="me" href="https://github.com/heartles">
+          <a rel="me" aria-label="Github Link" href="https://github.com/heartles">
             <i class="fab fa-github fa-sm"></i></a>
-          <a rel="me" href="https://gitlab.com/heartles">
+          <a rel="me" aria-label="Gitlab Link" href="https://gitlab.com/heartles">
             <i class="fab fa-gitlab fa-sm"></i></a>
         </li>
       </ul>
     </nav>
   </header>
   <!--sets background color-->
-  <div id="content">
+  <main id="content">
     <!--ensures distance from edge on wide screens-->
     <div>
       <!--ensures minimum distance from edge on small screens-->
@@ -63,7 +65,7 @@
         {{ . }}
       </div>
     </div>
-  </div>
+  </main>
   <footer>
     some stuff goes here idk, copyright and whatnot
   </footer>

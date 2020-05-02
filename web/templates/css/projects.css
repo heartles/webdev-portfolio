@@ -1,0 +1,24 @@
+#projects img {
+  max-width: 25%;
+}
+
+#projects section {
+  overflow: auto;
+}
+
+#projects h1 {
+  text-align: center;
+  font-size: 200%;
+}
+
+#projects h2 {
+  padding-top: 20px;
+}
+
+#projects .align-left div {
+  text-align: left;
+}
+
+#projects .align-right div {
+  text-align: right;
+}

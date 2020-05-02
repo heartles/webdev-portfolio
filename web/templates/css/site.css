@@ -4,6 +4,7 @@ body {
   margin: 0px;
 }
 
+/* header css */
 header {
   background-color: #222;
   margin: 0;
@@ -68,6 +69,7 @@ header a {
   display: none;
 }
 
+/* mobile header css */
 @media screen and (max-width: 700px) {
   header .name {
     float: none;
@@ -140,6 +142,7 @@ header a {
   }
 }
 
+/* content shell css */
 #content {
   background-color: #bbb;
   margin: 0px;
@@ -157,21 +160,29 @@ header a {
   padding: 1px 20px;
 }
 
+/* helper/shared css */
 img {
   margin: 20px;
   border-radius: 50%;
 }
 
-img.left {
+.float-left {
   float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+img.float-left {
   margin-left: 0px;
 }
 
-img.right {
-  float: right;
+img.float-right {
   margin-right: 0px;
 }
 
+/* footer css */
 footer {
   bottom: 0;
   width: 100%;
